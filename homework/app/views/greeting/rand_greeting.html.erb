@@ -1,0 +1,11 @@
+<nav>
+	<%= link_to "Favorites", faves_url %>
+	<%= link_to "Friends", friends_url %>
+	<%= link_to "Greeting", greeting_url %>
+	<%= link_to "Search", search_url %>
+
+</nav>
+
+<p> 
+	<%= @greetings[rand(0..2)] %>
+</p>

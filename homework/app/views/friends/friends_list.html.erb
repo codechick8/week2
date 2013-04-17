@@ -1,0 +1,19 @@
+<nav>
+	<%= link_to "Favorites", faves_url %>
+	<%= link_to "Friends", friends_url %>
+	<%= link_to "Greeting", greeting_url %>
+	<%= link_to "Search", search_url %>
+
+</nav>
+
+<ul>
+<% @friends.each do |friend| %>
+	 <li><%= friend %></li>
+<% end %>
+
+</ul>
+
+	<!-- <a href="/favorites">Favorites</a>
+	<a href="/friends">Friends</a>
+	<a href="/greeting">Greeting</a>
+	<a href="/search">Search</a>
